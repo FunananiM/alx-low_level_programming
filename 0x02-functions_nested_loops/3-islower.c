@@ -1,21 +1,17 @@
+#include <unistd.h>
 #include "main.h"
 
 /**
- * print_alphabet_x10 - This function prints the alphabet 10 times
- * in lowercase, followed by a newline
+ * _islower - checks whether the passed character is a lowercase letter
+ * @c: The character to check
+ *
+ * Return: 1 if c is lowercase, otherwise Return: 0
  */
 
-void print_alphabet_x10(void)
+int _islower(int c)
 {
-	int ch, i;
-
-	for (i = 0; i < 10; i++)
-	{
-		for (ch = 'a'; ch <= 'z'; ch++)
-		{
-			_putchar(ch);
-
-		}
-		_putchar('\n');
-	}
+	if (c >= 97 && c <= 122)
+		return (1);
+	else
+		return (0);
 }
