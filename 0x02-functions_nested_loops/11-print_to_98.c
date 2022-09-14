@@ -1,4 +1,11 @@
-@@ -11,27 +11,27 @@
+#include <stdio.h>
+#include "main.h"
+/**
+ * print_to_98 - This function prints all natural numbers
+ * from n to 98, followed by a new line
+ * @n: Starting integer to count down or up to 98
+ */
+void print_to_98(int n)
 {
 	int i;
 	if (n < 98)
